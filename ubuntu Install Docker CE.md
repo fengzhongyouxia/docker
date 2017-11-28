@@ -87,6 +87,11 @@ $ sudo rm -rf /var/lib/docker
 
 # 更换docker镜像源
 
+阿里：https://market.aliyun.com/products/53366009/?spm=5176.8623419.777960.27.JwMoxm#ymk=%7B%22categoryId%22:57742013,%22pageSize%22:10,%22saleMode%22:0,%22pageIndex%22:1,%22tag%22:%22Ubuntu%22,%22keywords%22:%22%22%7D
+
+网易镜像中心：https://c.163.com/hub#/m/home/ 
+daocloud镜像市场：https://hub.daocloud.io/
+
 ```
 # 查看镜像源
 docker images
