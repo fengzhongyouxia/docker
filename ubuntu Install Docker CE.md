@@ -1,4 +1,8 @@
-参考：https://docs.docker.com/
+参考：
+
+1、https://docs.docker.com/
+
+2、http://csphere.cn/training 视频
 
 
 ----------
