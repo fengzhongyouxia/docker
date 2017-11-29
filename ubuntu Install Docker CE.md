@@ -87,11 +87,6 @@ $ sudo rm -rf /var/lib/docker
 
 # 更换docker镜像源
 
-阿里：https://market.aliyun.com/products/53366009/?spm=5176.8623419.777960.27.JwMoxm#ymk=%7B%22categoryId%22:57742013,%22pageSize%22:10,%22saleMode%22:0,%22pageIndex%22:1,%22tag%22:%22Ubuntu%22,%22keywords%22:%22%22%7D
-
-网易镜像中心：https://c.163.com/hub#/m/home/ 
-daocloud镜像市场：https://hub.daocloud.io/
-
 ```
 # 查看镜像源
 docker images
@@ -103,3 +98,19 @@ sudo sed -i “s|ExecStart=/usr/bin/dockerd|ExecStart=/usr/bin/dockerd –regist
 echo "DOCKER_OPTS=\"--registry-mirror=https://pee6w651.mirror.aliyuncs.com\"" | sudo tee -a /etc/default/docker
 sudo service docker restart
 ```
+
+# Docker用户权限
+
+```python
+###以下操作都是在根用户下进行的
+
+###增加一个用户组docker
+groupadd docker
+###把用户${USER}加入docker用户组
+usermod -aG docker ${USER}
+###重启docker服务(可不执行)
+service docker restart
+###新窗口登录${USER}
+```
+
+
