@@ -546,6 +546,8 @@ Swarm管理人员可以使用多种策略来运行容器，比如“最空的节
 
 现在，使用Docker-machine创建几个虚拟机，使用VirtualBox驱动程序：
 
+[Docker-machine](https://docs.docker.com/machine/install-machine/#install-machine-directly)安装
+
 ```
 docker-machine create --driver virtualbox myvm1
 docker-machine create --driver virtualbox myvm2
