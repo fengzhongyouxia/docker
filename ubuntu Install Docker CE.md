@@ -85,19 +85,6 @@ $ sudo apt-get purge docker-ce
 $ sudo rm -rf /var/lib/docker
 ```
 
-# 更换docker镜像源
-
-```
-# 查看镜像源
-docker images
-# 更换网易镜像源
-docker pull hub.c.163.com/library/tomcat:latest
-# 阿里
-sudo sed -i “s|ExecStart=/usr/bin/dockerd|ExecStart=/usr/bin/dockerd –registry-mirror=https://pee6w651.mirror.aliyuncs.com|g” /etc/systemd/system/docker.service
-
-echo "DOCKER_OPTS=\"--registry-mirror=https://pee6w651.mirror.aliyuncs.com\"" | sudo tee -a /etc/default/docker
-sudo service docker restart
-```
 
 # Docker用户权限
 
