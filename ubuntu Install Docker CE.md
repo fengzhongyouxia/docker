@@ -82,6 +82,27 @@ sudo dpkg -i /path/to/package.deb
 sudo docker run hello-world
 ```
 
+----------
+# 使用脚本安装 Docker
+
+1、获取最新版本的 Docker 安装包
+
+```
+wget -qO- https://get.docker.com/ | sh
+```
+当要以非root用户可以直接运行docker时，需要执行 sudo usermod -aG docker runoob 命令，然后重新登陆
+2、启动docker 后台服务
+
+```
+sudo service docker start
+```
+3、测试运行hello-world
+
+```
+docker run hello-world
+```
+
+
 # Uninstall Docker CE
 
 ```python
