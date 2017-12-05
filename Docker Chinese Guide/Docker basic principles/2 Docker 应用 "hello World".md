@@ -133,3 +133,17 @@ CONTAINER ID  IMAGE         COMMAND               CREATED        STATUS       PO
 
 太好了，我们的容器停止了。
 
+------
+# 后台容器连接
+```python
+# 查看后台容器
+docker ps -l
+
+# 1、
+docker attach 容器id/容器名  # 进入后，exit 或 CTRL+D 退出后 容器会结束（后台不会再运行）
+
+# 2、推荐
+docker exec -it 容器id/容器名 /bin/sh  # 进入后，exit 或 CTRL+D 退出后 容器不会结束（后台会再运行）
+```
+
+
