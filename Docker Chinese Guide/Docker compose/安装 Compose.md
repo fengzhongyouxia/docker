@@ -2,16 +2,24 @@
 
 ----------
 
+- [1、安装docker](#安装docker)
+- [2、安装Compose](#安装Compose)
+- [2.1、在Linux系统上安装Compose](##在Linux系统上安装Compose)
+- [3、更新](#更新)
+- [4、卸载](#卸载)
+- [5、Compose文档](#Compose文档)
+
+
 您可以在macOS，Windows和64位Linux上运行Compose。
 
-# 前提条件（安装docker）
+# 安装docker
 Docker Compose依靠Docker Engine进行任何有意义的工作，因此请确保您已经安装了本地或远程的Docker Engine，具体取决于您的设置。
 
  - 在Docker for Mac和Windows等桌面系统上，Docker Compose作为桌面安装的一部分。
  - 在Linux系统上，首先按照Get Docker页面上的描述为您的操作系统安装Docker，然后回到这里以获取在Linux系统上安装Compose的说明。
 
 ----------
-# 安装 Compose
+# 安装Compose
 按照下面的说明在Mac，Windows，Windows Server 2016或Linux系统上安装Compose，或者查找使用pip Python包管理器或将Compose作为容器安装的替代方法。
 
 ## 在Linux系统上安装Compose
@@ -62,7 +70,7 @@ sudo rm /usr/local/bin/docker-compose
 pip uninstall docker-compose
 ```
 
-# Compose 文档
+# Compose文档
 
 [用户指南](https://docs.docker.com/compose/)
 [入门](https://docs.docker.com/compose/gettingstarted/)
