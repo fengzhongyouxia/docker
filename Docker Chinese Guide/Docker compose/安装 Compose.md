@@ -4,7 +4,7 @@
 
 - [1、安装docker](#安装docker)
 - [2、安装Compose](#安装Compose)
-- [2.1、在Linux系统上安装Compose](##在Linux系统上安装Compose)
+- [2.1、在Linux系统上安装Compose](#在Linux系统上安装Compose)
 - [3、更新](#更新)
 - [4、卸载](#卸载)
 - [5、Compose文档](#Compose文档)
