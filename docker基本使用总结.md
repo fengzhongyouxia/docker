@@ -1,4 +1,14 @@
-# 1、下载镜像
+
+- [下载镜像](#下载镜像)
+- [更新镜像](#更新镜像)
+- [设置镜像标签](#设置镜像标签)
+- [发布镜像](#发布镜像)
+- [从远程存储库中提取并运行镜像](#从远程存储库中提取并运行镜像)
+- [发布到阿里镜像](#发布到阿里镜像)
+- [附加](#附加)
+
+-------
+# 下载镜像
 
 ```python
 # 如安装python镜像
@@ -12,7 +22,7 @@ docker run -p 4000:80 --name=python3.5 python # 如果本地不存在会自动�
 或 使用Dockerfile 创建
 参考：http://www.runoob.com/docker/docker-install-python.html
 
-# 2、更新镜像
+# 更新镜像
 先使用镜像来创建一个容器
 
 ```python
@@ -40,6 +50,7 @@ docker tag 860c279d2fec 781708249/mydocker:part2
 # 发布镜像
 
 ```python
+# 发布到docker hub
 # 连接docker hub账号
 $ docker login
 # 输入用户名与密码 完成登录
@@ -63,6 +74,28 @@ docker push 781708249/mydocker:part2 # 参考 docker tar
 # docker run -p 4000:80 username/repository:tag
 docker run -p 4000:80 781708249/mydocker:part2
 ```
+
+# 发布到阿里镜像
+
+登录阿里[容器Hub服务](https://cr.console.aliyun.com/?spm=5176.100239.blogcont29941.12.NjxJue#/imageList)的控制台
+
+先设置 镜像加速器
+
+![这里写图片描述](http://img.blog.csdn.net/20171206221230883?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2M3ODE3MDgyNDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+点开管理 查看如何发布镜像到该 阿里镜像上
+
+如：我的是
+
+```python
+$ sudo docker login --username=wucong0803@126.com registry.cn-hangzhou.aliyuncs.com # 登录 阿里镜像
+$ sudo docker tag [ImageId] registry.cn-hangzhou.aliyuncs.com/781708249/ubuntu:[镜像版本号]
+$ sudo docker push registry.cn-hangzhou.aliyuncs.com/781708249/ubuntu:[镜像版本号]
+```
+
+
+
+
 
 # 附加
 
