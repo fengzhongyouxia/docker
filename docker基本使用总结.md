@@ -21,12 +21,12 @@ root@84f08a0b8ca8:
 # root@后面的为容器id，每次运行镜像时得到的容器id都是唯一的
 
 # 在该容器id中安装更新等后，可以将容器保存成镜像，后续可以上传该镜像到docker hub
-docker commit -m="has update" -a="runoob" e218edb10161 runoob/ubuntu:v2
+docker commit -m="has update" -a="runoob" 84f08a0b8ca8 runoob/ubuntu:v2
 """
 各个参数说明
 -m:提交的描述信息
 -a:指定镜像作者
-e218edb10161：容器ID （不是镜像ID）
+84f08a0b8ca8：容器ID （不是镜像ID）
 runoob/ubuntu:v2:指定要创建的目标镜像名
 """
 ```
